@@ -7,23 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp4.Controllers;
-using WindowsFormsApp4.Models;
 
 namespace WindowsFormsApp4
 {
-    public partial class Deals : Form
+    public partial class addLeads : Form
     {
-        private DealController dealController = new DealController();
-        public Deals()
+        public addLeads()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Example: Use dealController to add or retrieve deals
-            // var deals = dealController.GetAllDeals();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -15,6 +15,8 @@ namespace WindowsFormsApp4
         public Home()
         {
             InitializeComponent();
+            textBox1.Text = "Search for leads, properties, and more... ";
+            textBox1.ForeColor = Color.Silver;
         }
 
         private void LoadFormInPanel(Form form)

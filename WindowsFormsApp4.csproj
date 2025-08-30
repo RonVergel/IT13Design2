@@ -209,6 +209,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addContacts.Designer.cs">
+      <DependentUpon>addContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addDeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDeals.Designer.cs">
+      <DependentUpon>addDeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addLeads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addLeads.Designer.cs">
+      <DependentUpon>addLeads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\DealController.cs" />
+    <Compile Include="Controllers\LeadController.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,8 +266,20 @@
     <Compile Include="frmProperties.Designer.cs">
       <DependentUpon>frmProperties.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Deal.cs" />
+    <Compile Include="Models\Lead.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addContacts.resx">
+      <DependentUpon>addContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addDeals.resx">
+      <DependentUpon>addDeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addLeads.resx">
+      <DependentUpon>addLeads.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

@@ -37,9 +37,9 @@
             this.Source1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Score1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Agent1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Agent1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.lEdit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addLeads = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,6 +132,8 @@
             this.Agent1.HeaderText = "Agent";
             this.Agent1.MinimumWidth = 6;
             this.Agent1.Name = "Agent1";
+            this.Agent1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Agent1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Agent1.Width = 125;
             // 
             // lEdit
@@ -146,25 +148,25 @@
             this.lEdit.UseColumnTextForButtonValue = true;
             this.lEdit.Width = 125;
             // 
-            // button1
+            // addLeads
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(1225, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 53);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add Leads";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.addLeads.BackColor = System.Drawing.SystemColors.Highlight;
+            this.addLeads.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Bold);
+            this.addLeads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.addLeads.Location = new System.Drawing.Point(1225, 33);
+            this.addLeads.Name = "addLeads";
+            this.addLeads.Size = new System.Drawing.Size(135, 53);
+            this.addLeads.TabIndex = 3;
+            this.addLeads.Text = "Add Leads";
+            this.addLeads.UseVisualStyleBackColor = false;
+            this.addLeads.Click += new System.EventHandler(this.button1_Click);
             // 
             // Leads
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1411, 747);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addLeads);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -183,14 +185,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addLeads;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name1;
         private System.Windows.Forms.DataGridViewTextBoxColumn lEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn lPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Source1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Score1;
         private System.Windows.Forms.DataGridViewComboBoxColumn Status1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Agent1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Agent1;
         private System.Windows.Forms.DataGridViewButtonColumn lEdit;
     }
 }

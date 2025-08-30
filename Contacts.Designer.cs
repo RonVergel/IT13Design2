@@ -88,6 +88,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Add Contacts";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Name1
             // 
@@ -102,7 +103,8 @@
             this.Status1.Items.AddRange(new object[] {
             "Lead",
             "Offered",
-            "Client"});
+            "Client",
+            "Agent"});
             this.Status1.MinimumWidth = 6;
             this.Status1.Name = "Status1";
             this.Status1.Width = 125;
@@ -138,7 +140,7 @@
             this.cEdit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.cEdit.Width = 125;
             // 
-            // Form4
+            // Contacts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,7 +151,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.Name = "Form4";
+            this.Name = "Contacts";
             this.Text = "Form4";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -32,7 +32,8 @@ namespace WindowsFormsApp4
             using (Home form2 = new Home())
             {
                 form2.ShowDialog();
-            }   
+            }
+            this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
